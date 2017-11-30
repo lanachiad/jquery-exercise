@@ -13,6 +13,11 @@ $(document).ready(function() {
 
   // 2. Remove each item when we click on the closing X
 
+  $('.close').on('click', function(e) {
+    const item = $(this).closest('.item');
+    item.remove();
+  });
+
   // 3. Create a new item using the input field
   //    The title of the new item has to match the input value
   //    The new item should also have the same properties (collapse/expand and close) as the other items
