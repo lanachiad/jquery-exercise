@@ -9,3 +9,43 @@
 	light orange color: #ec9371
 
 ******/
+
+.container {
+  font-family: 'Arial', sans-serif;
+  margin: 0 auto;
+  width: 500px;
+}
+
+.item {
+  border: 1px solid gray;
+  border-radius: 2px;
+  margin: 10px 0;
+}
+
+.head {
+  background-color: #db4006;
+  border-radius: 2px 2px 0 0;
+}
+
+.title {
+  color: #fff;
+  display: inline-block;
+  font-size: 14pt;
+  margin: 0;
+}
+
+.head,
+.description {
+  padding: 10px 20px;
+}
+
+.close {
+  float: right;
+  font-size: 14pt;
+}
+
+.description {
+  background-color: #ec9371;
+  border-radius: 0 0 2px 2px;
+  margin: 0;
+}
