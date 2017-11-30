@@ -2,7 +2,7 @@
 $(document).ready(function() {
   // 1. Make each item's paragraph collapse/expand when the title is clicked
 
-  $('.head').on('click', function(e) {
+  $('.item-list').on('click', '.head', function(e) {
     const description = $(this).siblings('.description');
     if (description.is(':visible')) {
       description.slideUp();
@@ -13,7 +13,7 @@ $(document).ready(function() {
 
   // 2. Remove each item when we click on the closing X
 
-  $('.close').on('click', function(e) {
+  $('.item-list').on('click', '.close', function(e) {
     const item = $(this).closest('.item');
     item.remove();
   });
